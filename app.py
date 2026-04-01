@@ -119,7 +119,7 @@ if uploaded_file:
 
     # --- КАРУСЕЛЬ ТОП-5 НАХОДОК ---
     st.divider()
-    st.subheader("🏆 Top 5 Detections (Largest/Most Certain)")
+    st.subheader("Top 5 Detections (Largest/Most Certain)")
     if st.session_state.top_finds:
         cols = st.columns(5)
         for i, (score, img_data) in enumerate(st.session_state.top_finds):
